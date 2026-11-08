@@ -1,0 +1,20 @@
+name: Feature request
+description: Suggest something Rigly should do.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: Tell us what you're trying to get done, and what gets in the way today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How could Rigly help?
+      description: Your idea for it, if you have one. A screenshot or sketch is welcome.
+  - type: input
+    id: rigly-version
+    attributes:
+      label: Rigly version

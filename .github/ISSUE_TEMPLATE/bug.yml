@@ -1,0 +1,58 @@
+name: Bug report
+description: Something in Rigly for Windows doesn't work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing the Rigly beta on Windows. Choosing **Send Feedback (Beta)** in Rigly's tray menu (or the BETA badge) fills in the versions below for you.
+        Please check the [troubleshooting guide](https://getrigly.com/docs/troubleshooting/) and the [open issues](https://github.com/Rigly-Dev/rigly-windows/issues) first.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+      placeholder: "I turned on HTTPS for shop.test, and Edge shows a certificate warning."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. …
+        2. …
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `rigly doctor`
+      description: Run `rigly doctor` in PowerShell or Terminal and paste the result. It shows Rigly's checks; it contains no passwords.
+      render: text
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: From Rigly's Logs window, or `rigly logs` / `rigly logs caddy`. Remove anything private.
+      render: text
+  - type: input
+    id: rigly-version
+    attributes:
+      label: Rigly version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: windows-version
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 (build 26200)"
+  - type: input
+    id: pc
+    attributes:
+      label: PC
+      placeholder: "X64 PC"
+  - type: textarea
+    id: other-tools
+    attributes:
+      label: Anything else on this PC that might matter?
+      description: "For example Laravel Herd, Laragon, XAMPP or WAMP, WSL or Docker, IIS, another PHP on your Path, or a VPN."

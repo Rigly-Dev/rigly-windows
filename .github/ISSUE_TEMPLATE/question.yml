@@ -1,0 +1,14 @@
+name: Question or other feedback
+description: Ask a question, or tell us what you think of Rigly.
+labels: [question]
+body:
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Your question or feedback
+    validations:
+      required: true
+  - type: input
+    id: rigly-version
+    attributes:
+      label: Rigly version
